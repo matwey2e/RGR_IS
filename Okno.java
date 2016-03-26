@@ -96,3 +96,24 @@ public class Okno {
         constraints.gridy = 3;
         layout.setConstraints(prField, constraints);
         
+	constraints.gridx = 2;
+        constraints.ipadx = 0;
+        constraints.gridy = 0;
+        layout.setConstraints(kmLabel, constraints);
+        constraints.gridy = 1;
+        layout.setConstraints(litersLabel, constraints);
+        constraints.gridy = 2;
+        layout.setConstraints(litersLabel2, constraints);
+        constraints.gridy = 3;
+        layout.setConstraints(rurLabel, constraints);
+        
+        constraints.gridx = 0;
+        constraints.gridy = 4;
+        constraints.gridwidth = GridBagConstraints.REMAINDER;
+        constraints.anchor = GridBagConstraints.EAST;
+        layout.setConstraints(calcButton, constraints);
+        
+        constraints.gridy = 5;
+        constraints.fill = GridBagConstraints.HORIZONTAL;
+        constraints.anchor = GridBagConstraints.WEST;
+        layout.setConstraints(resultLabel, constraints);
