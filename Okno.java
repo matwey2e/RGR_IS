@@ -117,3 +117,38 @@ public class Okno {
         constraints.fill = GridBagConstraints.HORIZONTAL;
         constraints.anchor = GridBagConstraints.WEST;
         layout.setConstraints(resultLabel, constraints);
+
+	mainFrame = new JFrame("Расчет оконной конструкции");
+        mainFrame.setSize(600, 450);
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        mainFrame.setLayout(layout);
+        
+        mainFrame.add(pLabel);
+        mainFrame.add(tLabel);
+        mainFrame.add(tLabel2);
+        mainFrame.add(prLabel);
+        mainFrame.add(pField);
+        mainFrame.add(tField);
+        mainFrame.add(tField2);
+        mainFrame.add(prField);
+        mainFrame.add(kmLabel);
+        mainFrame.add(litersLabel);
+        mainFrame.add(litersLabel2);
+        mainFrame.add(rurLabel);
+        mainFrame.add(calcButton);
+        mainFrame.add(resultLabel);
+        
+        mainFrame.pack();
+        mainFrame.setVisible(true);
+    }
+    
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new Okno();
+            }
+        });
+    }
+ 
+}
