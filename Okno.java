@@ -64,3 +64,35 @@ public class Okno {
                 }
             }
         });
+	resultLabel = new JLabel("Введите данные для рассчёта");
+        
+        GridBagLayout layout = new GridBagLayout();
+        GridBagConstraints constraints = new GridBagConstraints();
+        constraints.weightx = 1.0;
+        constraints.weighty = 1.0;
+        constraints.insets = new Insets(5, 5, 5, 5);
+        
+        constraints.gridx = 0;
+        constraints.anchor = GridBagConstraints.WEST;
+        constraints.ipadx = 90;
+        constraints.gridy = 0;
+        layout.setConstraints(pLabel, constraints);
+        constraints.gridy = 1;
+        layout.setConstraints(tLabel, constraints);
+        constraints.gridy = 2;
+        layout.setConstraints(tLabel2, constraints);
+        constraints.gridy = 3;
+        layout.setConstraints(prLabel, constraints);
+        
+        constraints.gridx = 1;
+        constraints.anchor = GridBagConstraints.EAST;
+        constraints.ipadx = 50;
+        constraints.gridy = 0;
+        layout.setConstraints(pField, constraints);
+        constraints.gridy = 1;
+        layout.setConstraints(tField, constraints);
+        constraints.gridy = 2;
+        layout.setConstraints(tField2, constraints);
+        constraints.gridy = 3;
+        layout.setConstraints(prField, constraints);
+        
